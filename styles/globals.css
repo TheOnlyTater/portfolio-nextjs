@@ -18,7 +18,7 @@
 
 @layer base {
     body {
-        @apply bg-[var(--bg-color)] text-[var(--text-color)] tracking-wide
+        @apply bg-[var(--bg-color)] text-[var(--text-color)] tracking-wide z-[-2]
     }
 
     h1, h2, h3, h4, h5, h6 {
