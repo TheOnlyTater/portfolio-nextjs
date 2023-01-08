@@ -1,0 +1,32 @@
+{
+    "mottext": "Let's build somthing legendary together",
+    "lang": "language",
+    "nor": "Norwegian",
+    "ger": "German",
+    "eng": "English",
+    "them": "Themes",
+    "old": "OldSchool",
+    "mod": "Modern",
+    "con": "Let's Connect!!!",
+
+
+    "title": "Engines On!",
+    "underTitle": "Let's find somthing legendary together",
+    "introduction": "Hi I'm Mikhail",
+    "joke": "I have an apetite for",
+    "list": "en",
+
+    "firstName": "Mikhail",
+    "lastName": "Pavlenko",
+    "nameTitle": "Make a title",
+    "desc": "I started web developement in 2013 managing multiple e-commerce websites on CMS platforms such as WordPress, BigCommerce, and Shopify. I have experience working directly with clients and taking mock wireframes all the way to deployed applications. In my spare time I run Code Commerce, a Youtube channel where I teach web developement and various front-end technologies.",
+    "underDesc": "I started web developement in 2013 managing multiple e-commerce websites on CMS platforms such as WordPress, BigCommerce, and Shopify.",
+    "ButtonLink": "projects",
+
+    "ex": "Sorry, but the project is still under construction until late 2023 (if my estimations are correct). Meanwhile you can enjoy the UI of the website or contact me",
+
+    "ct": "What's Next?",
+    "uct": "Get In Touch",
+    "uce": "Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!",
+    "ucb": "Say Hello"
+}
