@@ -25,7 +25,7 @@ const Hero = ({title, underTitle, introduction, joke, list}:Args) => {
         }, delta);
 
         return () => { clearInterval(ticker) };
-    }, [text])
+    }, [text, delta])
 
     const tick = () => {
         let i = loopNum % toRotate.length;

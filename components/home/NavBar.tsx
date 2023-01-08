@@ -56,7 +56,7 @@ const NavBar = ({
 		if (nav) {
 			setShowSettings(false)
 		}
-	},[])
+	},[nav])
 
 	useEffect(() => {
 		const CheckShow = () => {
@@ -198,10 +198,10 @@ const NavBar = ({
 				<div className={displayLanguages || displayThemes ? 'hidden' : 'pt-20 ml-4 max-w-[80%]'}>
 				<p className='uppercase tracking-widest p-4 border-2 border-black bg-[var(--text-bg-color)]'>{con}</p>
 				<div className='flex items-center justify-between my-4'>
-					<a href='https://no.linkedin.com/' target='_blank' className='border-2 bg-[var(--highlight-color)] border-black p-3 cursor-pointer hover:scale-125 hover:bg-[#0072b1] ease-in duration-100'>
+					<a href='https://no.linkedin.com/' rel="noreferrer" target='_blank' className='border-2 bg-[var(--highlight-color)] border-black p-3 cursor-pointer hover:scale-125 hover:bg-[#0072b1] ease-in duration-100'>
 						<FaLinkedinIn />
 					</a>
-					<a href='https://github.com/TheOnlyTater' target='_blank' className='border-2 bg-[var(--highlight-color)] border-black p-3 cursor-pointer hover:scale-125 hover:bg-[#fffbed] ease-in duration-100'>
+					<a href='https://github.com/TheOnlyTater' rel="noreferrer" target='_blank' className='border-2 bg-[var(--highlight-color)] border-black p-3 cursor-pointer hover:scale-125 hover:bg-[#fffbed] ease-in duration-100'>
 						<FaGithub />
 					</a>
 					<a href={'mailto:' + email} className='border-2 bg-[var(--highlight-color)] border-black p-3 cursor-pointer hover:scale-125 hover:bg-[#b66eff] ease-in duration-100'>
