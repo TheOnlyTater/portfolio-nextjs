@@ -93,8 +93,8 @@ const NavBar = ({
 			<ul className='hidden md:flex items-center buttoncolor'>
 				{
 					navLinks.map(({name, url}, i) => (
-						<Link href={url}>
-							<li key={i} className='flex justify-center items-center h-14 w-40 ml-10 border-4 bg-[var(--button-color)] buttonShadow border-black text-lg uppercase hover:scale-105 duration-100'>{name}</li>
+						<Link key={i} href={url}>
+							<li  className='flex justify-center items-center h-14 w-40 ml-10 border-4 bg-[var(--button-color)] buttonShadow border-black text-lg uppercase hover:scale-105 duration-100'>{name}</li>
 						</Link>
 					))
 				}
@@ -159,7 +159,7 @@ const NavBar = ({
 				<ul className='w-[100%] uppercase flex flex-wrap'>
 				{
 					navLinks.map(({name, url}, i) => (
-					<Link key={i} href={url}>
+					<Link key={i}  href={url}>
 						<li className=' flex justify-center items-center h-14 w-40 ml-4 border-4 bg-[var(--button-color)] buttonShadow border-black text-lg uppercase hover:scale-105 duration-100 mt-4'>{name}</li>
 					</Link>
 					))
