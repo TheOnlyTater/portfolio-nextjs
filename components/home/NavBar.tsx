@@ -1,5 +1,4 @@
 import {useState, useEffect} from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { RemoveScroll } from 'react-remove-scroll'
 
@@ -112,7 +111,6 @@ const NavBar = ({
 				{
 					displayLanguages ? (
 						<div className='flex justify-center items-center flex-col bottom-[-60px] w-[100%]'>
-							<a className='w-[100%] py-2 border-4 border-black text-center hover:scale-110 cursor-pointer ease-in duration-100'>{nor}</a>
 							<a onClick={() => handLanguageChange('de')} className='w-[100%] py-2 border-4 border-black text-center hover:scale-110 cursor-pointer ease-in duration-100'>{ger}</a>
 							<a onClick={() => handLanguageChange('en')} className='w-[100%] py-2 border-4 border-black text-center hover:scale-110 cursor-pointer ease-in duration-100'>{eng}</a>
 						</div>
@@ -174,7 +172,6 @@ const NavBar = ({
 						{
 							displayLanguages ? (
 								<div className='flex justify-center items-center flex-col bottom-[-60px] w-[100%]'>
-									<a className='w-[100%] py-2 border-4 border-black text-center hover:scale-110 cursor-pointer ease-in duration-100'>{nor}</a>
 									<a className='w-[100%] py-2 border-4 border-black text-center hover:scale-110 cursor-pointer ease-in duration-100'>{ger}</a>
 									<a className='w-[100%] py-2 border-4 border-black text-center hover:scale-110 cursor-pointer ease-in duration-100'>{eng}</a>
 								</div>
@@ -201,18 +198,20 @@ const NavBar = ({
 				<div className={displayLanguages || displayThemes ? 'hidden' : 'pt-20 ml-4 max-w-[80%]'}>
 				<p className='uppercase tracking-widest p-4 border-2 border-black bg-[var(--text-bg-color)]'>{con}</p>
 				<div className='flex items-center justify-between my-4'>
-					<div className='border-2 bg-[var(--highlight-color)] border-black p-3 cursor-pointer hover:scale-125 hover:bg-[#0072b1] ease-in duration-100'>
-					<FaLinkedinIn />
-					</div>
-					<div className='border-2 bg-[var(--highlight-color)] border-black p-3 cursor-pointer hover:scale-125 hover:bg-[#fffbed] ease-in duration-100'>
-					<FaGithub />
-					</div>
-					<div className='border-2 bg-[var(--highlight-color)] border-black p-3 cursor-pointer hover:scale-125 hover:bg-[#b66eff] ease-in duration-100'>
-					<AiOutlineMail />
-					</div>
+					<a href='https://no.linkedin.com/' target='_blank' className='border-2 bg-[var(--highlight-color)] border-black p-3 cursor-pointer hover:scale-125 hover:bg-[#0072b1] ease-in duration-100'>
+						<FaLinkedinIn />
+					</a>
+					<a href='https://github.com/TheOnlyTater' target='_blank' className='border-2 bg-[var(--highlight-color)] border-black p-3 cursor-pointer hover:scale-125 hover:bg-[#fffbed] ease-in duration-100'>
+						<FaGithub />
+					</a>
+					<a href={'mailto:' + email} className='border-2 bg-[var(--highlight-color)] border-black p-3 cursor-pointer hover:scale-125 hover:bg-[#b66eff] ease-in duration-100'>
+						<AiOutlineMail />
+					</a>
+					{/*
 					<div className='border-2 bg-[var(--highlight-color)] border-black p-3 cursor-pointer hover:scale-125 hover:bg-[#4dffcc] ease-in duration-100'>
-					<BsFillPersonLinesFill />
+						<BsFillPersonLinesFill />
 					</div>
+					*/}
 				</div>
 				</div>
 			</div>

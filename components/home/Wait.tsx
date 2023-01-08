@@ -4,9 +4,6 @@ import { useInView } from 'react-intersection-observer';
 const Wait = ({ex}:any) => {
     const {ref, inView, entry} = useInView()
     const blackLines = [1,2,3,4,5,6,7,8,9,10, 11, 12, 13, 14, 15, 16]
-    console.log(inView)
-    
-
 
     return (
     <div ref={ref} id='work' className={inView ? 'relative h-screen bg-[var(--bg-color)] flex items-center justify-center overflow-hidden load' : 'notload'}>

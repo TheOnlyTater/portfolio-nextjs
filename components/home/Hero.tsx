@@ -16,7 +16,7 @@ const Hero = ({title, underTitle, introduction, joke, list}:Args) => {
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(100);
     const [index, setIndex] = useState(1);
-    const toRotate = list === "en" ?  [ "UI/UX", "Backend", "Everything" ] : list === "de" ? [ "No", "no", "no" ] : [ "UI/UX", "Backend", "Everything" ]
+    const toRotate = list === "en" ?  [ "UI/UX", "Backend", "Everything" ] : list === "de" ? [ "UI/UX", "Backend", "Alles" ] : [ "UI/UX", "Backend", "Everything" ]
     const period = 1000;
 
     useEffect(() => {
